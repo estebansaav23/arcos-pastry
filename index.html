@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arcos Pastry | Portuguese Bakery & Café</title>
+  <meta name="description" content="Arcos Pastry is a Portuguese bakery and café at 401 Kearny Ave, Kearny, NJ. Open daily 6:00 am to 9:00 pm.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Top bar: name, tagline, and links -->
+  <header class="site-header">
+    <a class="brand" href="#top">Arcos Pastry</a>
+    <p class="tagline">Portuguese Bakery &amp; Café / Panadería y Café Portugués</p>
+
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+      Menu
+    </button>
+
+    <nav id="site-nav" class="nav">
+      <a href="#favourites">Favourites / Favoritos</a>
+      <a href="#visit">Visit / Visítanos</a>
+      <a class="nav-whatsapp" href="https://wa.me/12019977557" target="_blank" rel="noopener">WhatsApp</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Big photo, bakery name, and a short welcome in both languages -->
+    <section class="hero">
+      <img
+        src="https://images.unsplash.com/photo-1736981607609-47198378b462?auto=format&fit=crop&w=1600&q=80"
+        alt="A pastel de nata, a Portuguese custard tart with a caramelized top, on a paper napkin"
+        width="1600"
+        height="1200">
+      <div class="hero-text">
+        <h1>Arcos Pastry</h1>
+        <div class="pair">
+          <p lang="en">Warm pastries and home-style plates, baked fresh every morning.</p>
+          <p lang="es">Pasteles calientes y platos caseros, horneados frescos cada mañana.</p>
+        </div>
+      </div>
+    </section>
+    <p class="photo-credit">Photo by David Magalhães on Unsplash</p>
+
+    <section id="favourites" class="section">
+      <h2>Our favourites / Nuestros favoritos</h2>
+
+      <ul class="menu">
+        <li>
+          <h3>Pastel de nata</h3>
+          <div class="pair">
+            <p lang="en">A crisp tart shell filled with sweet egg custard and a toasted top.</p>
+            <p lang="es">Una tartaleta crujiente rellena de crema de huevo, con la superficie tostada.</p>
+          </div>
+        </li>
+        <li>
+          <h3>Tosta mista</h3>
+          <div class="pair">
+            <p lang="en">Toasted bread with ham and melted cheese.</p>
+            <p lang="es">Pan tostado con jamón y queso fundido.</p>
+          </div>
+        </li>
+        <li>
+          <h3>Bitoque</h3>
+          <div class="pair">
+            <p lang="en">A small steak with a fried egg, rice, and fries.</p>
+            <p lang="es">Un filete pequeño con huevo frito, arroz y patatas fritas.</p>
+          </div>
+        </li>
+        <li>
+          <h3>Bacalhau com natas</h3>
+          <div class="pair">
+            <p lang="en">Salt cod baked with potatoes in a creamy sauce.</p>
+            <p lang="es">Bacalao al horno con patatas en una salsa cremosa.</p>
+          </div>
+        </li>
+        <li>
+          <h3>Rissóis</h3>
+          <div class="pair">
+            <p lang="en">Golden fried pastries filled with shrimp.</p>
+            <p lang="es">Empanadillas doradas y fritas, rellenas de camarón.</p>
+          </div>
+        </li>
+        <li>
+          <h3>Portuguese croissants</h3>
+          <div class="pair">
+            <p lang="en">Flaky, lightly sweet croissants — perfect with coffee.</p>
+            <p lang="es">Cruasanes hojaldrados y ligeramente dulces, perfectos con café.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="visit" class="section visit">
+      <h2>Visit us / Visítanos</h2>
+      <div class="pair">
+        <p lang="en">Come in and order at the counter. We are not taking online orders yet.</p>
+        <p lang="es">Pasa y pide en el mostrador. Todavía no tomamos pedidos por internet.</p>
+      </div>
+
+      <ul class="details">
+        <li>
+          <span>Address / Dirección</span>
+          <a href="https://www.google.com/maps/search/?api=1&query=401+Kearny+Ave,+Kearny,+NJ" target="_blank" rel="noopener">
+            401 Kearny Ave, Kearny, NJ
+          </a>
+        </li>
+        <li>
+          <span>Hours / Horario</span>
+          <div class="pair">
+            <p lang="en">Open daily, 6:00 am to 9:00 pm</p>
+            <p lang="es">Abierto todos los días, de 6:00 am a 9:00 pm</p>
+          </div>
+        </li>
+        <li>
+          <span>Phone / Teléfono</span>
+          <a href="tel:+12019977557">+1 201-997-7557</a>
+        </li>
+        <li>
+          <span>Instagram</span>
+          <a href="https://www.instagram.com/arcospastry/" target="_blank" rel="noopener">@arcospastry</a>
+        </li>
+      </ul>
+
+      <!-- Opens WhatsApp chat with the bakery number -->
+      <a class="whatsapp" href="https://wa.me/12019977557" target="_blank" rel="noopener">
+        Chat on WhatsApp / Chatea por WhatsApp
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> Arcos Pastry · Kearny, NJ</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
