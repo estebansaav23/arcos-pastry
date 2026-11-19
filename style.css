@@ -1,13 +1,14 @@
-/* Warm bakery colours and a readable font */
+/* Arcos colours: burgundy wine red, warm cream, and gold.
+   Change a colour once here in :root and the whole site updates. */
 :root {
   --cream: #fbf3e4;
   --paper: #fffaf3;
-  --brown: #7a4b2a;
-  --brown-dark: #3d2616;
-  --orange: #e8924a;
-  --orange-soft: #f6d3b0;
+  --wine: #722f37;
+  --wine-dark: #3f1218;
+  --gold: #d9a441;
+  --blush: #f3d9d2;
   --whatsapp: #128c7e;
-  --text: #3d2616;
+  --text: #3a2320;
 }
 
 * {
@@ -29,7 +30,7 @@ img {
 }
 
 a {
-  color: var(--brown);
+  color: var(--wine);
 }
 
 h1, h2, h3 {
@@ -45,7 +46,7 @@ h1, h2, h3 {
   align-items: center;
   gap: 0.4rem 1rem;
   padding: 0.85rem 1.1rem;
-  background: var(--brown-dark);
+  background: var(--wine-dark);
   color: var(--cream);
   position: sticky;
   top: 0;
@@ -71,8 +72,8 @@ h1, h2, h3 {
   border: 0;
   border-radius: 999px;
   padding: 0.45rem 0.9rem;
-  background: var(--orange);
-  color: var(--brown-dark);
+  background: var(--gold);
+  color: var(--wine-dark);
   font: inherit;
   font-weight: 700;
   cursor: pointer;
@@ -96,9 +97,12 @@ h1, h2, h3 {
   font-weight: 600;
 }
 
-.nav-whatsapp {
-  color: #07332e;
-  background: #b7ebdf;
+/* WhatsApp button in the header. This selector is more specific than
+   .nav a, so the white link colour no longer wins over this one.
+   WhatsApp green with white text, like the big button below. */
+.nav a.nav-whatsapp {
+  color: #ffffff;
+  background: var(--whatsapp);
   border-radius: 999px;
   padding: 0.45rem 0.85rem;
   width: fit-content;
@@ -115,7 +119,7 @@ h1, h2, h3 {
 }
 
 .pair p[lang="es"] {
-  color: #6b4630;
+  color: #6e4a45;
 }
 
 /* Hero photo fills the top of the page */
@@ -124,7 +128,7 @@ h1, h2, h3 {
   min-height: 70vh;
   display: grid;
   align-items: end;
-  background: var(--brown);
+  background: var(--wine);
 }
 
 .hero img {
@@ -139,7 +143,7 @@ h1, h2, h3 {
   position: relative;
   padding: 5rem 1.25rem 1.6rem;
   color: var(--paper);
-  background: linear-gradient(transparent, rgba(42, 24, 12, 0.88) 45%);
+  background: linear-gradient(transparent, rgba(48, 14, 20, 0.88) 45%);
 }
 
 .hero-text h1 {
@@ -157,7 +161,7 @@ h1, h2, h3 {
   margin: 0;
   padding: 0.4rem 1.25rem;
   font-size: 0.8rem;
-  color: #8a684e;
+  color: #8a6a63;
 }
 
 .section {
@@ -180,7 +184,7 @@ h1, h2, h3 {
 
 .menu li {
   background: var(--paper);
-  border: 1px solid var(--orange-soft);
+  border: 1px solid var(--blush);
   border-radius: 14px;
   padding: 0.95rem 1rem 1rem;
 }
@@ -188,7 +192,17 @@ h1, h2, h3 {
 .menu h3 {
   font-size: 1.25rem;
   margin-bottom: 0.35rem;
-  color: var(--brown);
+  color: var(--wine);
+}
+
+/* Photos in the favourites list */
+.menu img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  margin-bottom: 12px;
 }
 
 .visit {
@@ -215,7 +229,7 @@ h1, h2, h3 {
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--brown);
+  color: var(--wine);
   margin-bottom: 0.2rem;
 }
 
@@ -242,13 +256,13 @@ h1, h2, h3 {
 
 .site-footer {
   padding: 1.2rem 1.25rem 2rem;
-  color: #6b4630;
+  color: #6e4a45;
   font-size: 0.92rem;
 }
 
 a:focus-visible,
 button:focus-visible {
-  outline: 3px solid var(--orange);
+  outline: 3px solid var(--gold);
   outline-offset: 3px;
 }
 
@@ -280,22 +294,4 @@ button:focus-visible {
     margin-inline: auto;
     padding-inline: 1.5rem;
   }
-}
-/* Photos in the favourites list */
-.menu img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 12px;
-  display: block;
-  margin-bottom: 12px;
-}
-/* Photos in the favourites list */
-.menu img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 12px;
-  display: block;
-  margin-bottom: 12px;
 }
