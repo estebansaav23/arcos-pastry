@@ -281,3 +281,21 @@ button:focus-visible {
     padding-inline: 1.5rem;
   }
 }
+/* Photos in the favourites list */
+.menu img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  margin-bottom: 12px;
+}
+/* Photos in the favourites list */
+.menu img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  margin-bottom: 12px;
+}
