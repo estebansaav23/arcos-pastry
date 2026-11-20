@@ -295,3 +295,77 @@ button:focus-visible {
     padding-inline: 1.5rem;
   }
 }
+
+/* ---------- Dark mode ---------- */
+/* The toggle sets data-theme="dark" on <html>. These are the same
+   variables as :root, with darker values, so the whole site changes
+   without touching any other rule. */
+[data-theme="dark"] {
+  --cream: #211417;     /* page background */
+  --paper: #2e1b1f;     /* cards */
+  --wine: #e2a3ab;      /* headings and links on dark */
+  --wine-dark: #160708; /* header background */
+  --gold: #e3ab4e;
+  --blush: #4d2f35;     /* card borders */
+  --text: #f2e7dd;
+}
+
+/* The header text uses --cream, which is now dark, so set it light again. */
+[data-theme="dark"] .site-header,
+[data-theme="dark"] .brand,
+[data-theme="dark"] .nav a:not(.nav-whatsapp) {
+  color: #f3e6dc;
+}
+
+/* The hero text also uses --paper, which is now dark. */
+[data-theme="dark"] .hero-text,
+[data-theme="dark"] .hero-text .pair p,
+[data-theme="dark"] .hero-text .pair p[lang="es"] {
+  color: #fdf6ec;
+}
+
+[data-theme="dark"] .hero-text {
+  background: linear-gradient(transparent, rgba(18, 6, 9, 0.88) 45%);
+}
+
+/* Spanish text, photo credits, and footer are hardcoded mid-tones. */
+[data-theme="dark"] .pair p[lang="es"] {
+  color: #c8a49b;
+}
+
+[data-theme="dark"] .photo-credit,
+[data-theme="dark"] .site-footer {
+  color: #b59a92;
+}
+
+/* The toggle button: round, gold outline, sun/moon icon. */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--gold);
+  cursor: pointer;
+}
+
+.theme-toggle svg {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+/* Moon in light mode (tap to go dark), sun in dark mode (tap to go light). */
+.theme-toggle .icon-sun {
+  display: none;
+}
+
+[data-theme="dark"] .theme-toggle .icon-sun {
+  display: block;
+}
+
+[data-theme="dark"] .theme-toggle .icon-moon {
+  display: none;
+}
